@@ -1,6 +1,11 @@
-public class Teste {
-    public static void main(String[] args) {
-        Operacoes calc = new Operacoes();
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class CalculadoraJUNITTest {
+    @Test
+    public void somaDoisNumeros(){
+        CalculadoraJUNIT calc = new CalculadoraJUNIT();
 
         //Cenario de teste 1: Soma de dois valores positivos
         int soma = calc.soma(10,20);
@@ -33,8 +38,12 @@ public class Teste {
         //Cenario de teste 7: Soma de um numero maximo sendo um negativo
         soma = calc.soma(Integer.MAX_VALUE, -6);
         System.out.println(soma);
+    }
 
-        System.out.println("----SUBTRACAO----");
+    @Test
+    public void subtraiDoisNumeros(){
+        CalculadoraJUNIT calc = new CalculadoraJUNIT();
+
         //Cenario de teste 1: Subtracao de dois valores positivos
         int sub = calc.subtracao(10, 5);
         System.out.println(sub);
@@ -67,7 +76,12 @@ public class Teste {
         sub = calc.subtracao(Integer.MAX_VALUE, -10);
         System.out.println(sub);
 
-        System.out.println("----Divisao----");
+    }
+
+    @Test
+    public void DividirDoisNumeros(){
+        CalculadoraJUNIT calc = new CalculadoraJUNIT();
+
         //Cenario de teste 1: Divisao de dois valores positivos
         int div = calc.divisao(10,5);
         System.out.println(div);
@@ -99,8 +113,12 @@ public class Teste {
         //Cenario de teste 8: Divisao de um numero maximo sendo um 0
         div = calc.divisao(Integer.MAX_VALUE, 0);
         System.out.println(div);
+    }
 
-        System.out.println("----Multiplicacao----");
+    @Test
+    public void multiplicarDoisNumeros(){
+        CalculadoraJUNIT calc = new CalculadoraJUNIT();
+
         //Cenario de teste 1: Multiplicacao de dois valores
         int multi = calc.multiplicacao(200, 3);
         System.out.println(multi);
@@ -128,7 +146,6 @@ public class Teste {
         //Cenario de teste 6: Multiplicacao de um numero maximo sendo um negativo
         multi = calc.multiplicacao(Integer.MAX_VALUE, -5);
         System.out.println(multi);
-
 
     }
 }
