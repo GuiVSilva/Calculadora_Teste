@@ -2,14 +2,14 @@
  - Testes unitários em Java
 
 ## Tecnologias
-    Java, JUnit5
+    Java
 
 ## IDE
     IntelliJ
 
 # Descrição
   - Métodos de Soma, Subtração, Divisão e Multiplicação 
-  - Criando cenários de teste para cada método utilizando JUnit5
+  - Criando cenários de teste para cada método 
 
 ## Etapas do teste
   - Parte 1: Criar o cenário de teste (inicializa os objetos)
