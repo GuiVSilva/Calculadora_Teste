@@ -1,3 +1,11 @@
+/**
+ * Autor: Guilherme
+ * Data de Criação: 09/09/2023
+ * Versão: 2.0
+ *
+ * Esta classe contém testes para os métodos da classe CalculadoraJUNIT,
+ * incluindo cenários para soma, subtração, multiplicação e divisão.
+ */
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,15 +35,15 @@ class CalculadoraJUNITTest {
         soma = calc.soma(-2, 4);
         System.out.println(soma);
 
-        //Cenario de teste 5: Soma de dois valores sendo que ambos sao zero
+        //Cenario de teste 5: Soma de dois valores sendo que ambos negativos
         soma = calc.soma(-2,-2);
         System.out.println(soma);
 
-        //Cenario de teste 6: Soma de um numero maximo
+        //Cenario de teste 6: Soma de um numero maximo e um numero positivo
         soma = calc.soma(Integer.MAX_VALUE, 1);
         System.out.println(soma);
 
-        //Cenario de teste 7: Soma de um numero maximo sendo um negativo
+        //Cenario de teste 7: Soma de um numero maximo e um numero negativo
         soma = calc.soma(Integer.MAX_VALUE, -6);
         System.out.println(soma);
     }
