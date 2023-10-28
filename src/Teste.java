@@ -1,3 +1,11 @@
+/**
+ * Autor: Guilherme
+ * Data de Criação: 09/09/2023
+ * Versão: 2.0
+ *
+ * A classe Teste contém cenários de teste para a classe Operacoes, demonstrando o uso dos métodos de soma, subtração,
+ * multiplicação e divisão.
+ */
 public class Teste {
     public static void main(String[] args) {
         Operacoes calc = new Operacoes();
@@ -22,15 +30,15 @@ public class Teste {
         soma = calc.soma(-2, 4);
         System.out.println(soma);
 
-        //Cenario de teste 5: Soma de dois valores sendo que ambos sao zero
+        // Cenário de teste 6: Soma de dois números negativos
         soma = calc.soma(-2,-2);
         System.out.println(soma);
 
-        //Cenario de teste 6: Soma de um numero maximo
+        // Cenário de teste 7: Soma de um número máximo e um positivo
         soma = calc.soma(Integer.MAX_VALUE, 1);
         System.out.println(soma);
 
-        //Cenario de teste 7: Soma de um numero maximo sendo um negativo
+        // Cenário de teste 8: Soma de um número máximo e um número negativo
         soma = calc.soma(Integer.MAX_VALUE, -6);
         System.out.println(soma);
 
