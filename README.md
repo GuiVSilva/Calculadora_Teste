@@ -18,7 +18,7 @@
 
 ---
 
-**Atualizações:**
+**Codigo:**
 
 ```java
 /**
@@ -87,3 +87,8 @@
  * - Cenário de teste 6: Multiplicação de um número máximo por um número positivo.
  * - Cenário de teste 7: Multiplicação de um número máximo por um número negativo.
  * ```
+---
+
+**Atualizações:**
+
+Adicionada documentação detalhada aos métodos das classes `CalculadoraJUNIT` e `CalculadoraJUNITTest` para melhor compreensão do funcionamento e dos cenários de teste.
